@@ -81,4 +81,8 @@ p {
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
+}
+
+.hero__titre {
+  text-shadow: 10px 10px 0 cyan;
 }/*# sourceMappingURL=style.css.map */
