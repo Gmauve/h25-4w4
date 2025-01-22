@@ -84,9 +84,16 @@ p {
 }
 
 .hero__titre {
-  text-shadow: 10px 10px 0 cyan;
+  text-shadow: 2px 2px 0 cyan;
 }
 
 .hero__adresse {
   font-weight: bold;
+}
+
+.hero__btn {
+  width: fit-content;
+  background-color: cyan;
+  padding: 4px;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
