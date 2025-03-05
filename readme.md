@@ -1,9 +1,9 @@
 # TP1
 
-## Concevoir un site Wordpress pour un club de voyage
+## Conception d'un site Wordpress pour le club de voyage fictionnel "Volca"
 
 ### Auteur: Guillaume Nagy
 
 La réalisation de ce thème permettra d'optimiser la présentation d'un contenu spécifique sur différentes destination de voyages.
 
-#### Site en ligne: https://gmauve.github.io/h25-4w4/
+#### Site sur WHC: https://gftnth00.mywhc.ca/4w4_15/
