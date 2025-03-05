@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__logo img {
+        width: 200px;
+        height: auto;
+    }
     &__navigation {
         @media screen and (max-width: 800px) {
             position : absolute;
@@ -16,13 +20,7 @@
         position : static;
         flex-direction: row; 
         background-color: transparent;
-
-
-
-
         display: flex;
-        
-        align-items: center;
-                                                                   
+        align-items: center;                                                     
     }
 }

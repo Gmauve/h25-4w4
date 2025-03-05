@@ -25,6 +25,7 @@ Les balise de bases
 body {
   font-size: 16px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #DEDAD9;
 }
 
 h1 {
@@ -123,10 +124,19 @@ Les layouts
   padding: 10vh 5vw;
 }
 
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.entete__logo img {
+  width: 200px;
+  height: auto;
 }
 .entete__navigation {
   width: auto;
