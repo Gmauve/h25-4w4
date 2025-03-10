@@ -1,4 +1,7 @@
 <footer>
+<?php
+$footer_adresse = get_theme_mod('footer_adresse', 'Default Title');
+?>  
     <div class="piedpage global">
         <section class="piedpage__s1">
             <div class="piedpage__s1__externe">
@@ -10,7 +13,7 @@
             </div>
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eaque ratione facere eius cupiditate repellat corrupti asperiores distinctio similique accusantium iste odit saepe, voluptas expedita iusto, quo quis optio cum?
+                    <?= $footer_adresse ?>
                 </div>
                 <div class="piedpage__s1__adresse__recherche">
                     <?php get_search_form() ?>
