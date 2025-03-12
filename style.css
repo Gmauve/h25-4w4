@@ -114,7 +114,16 @@ Les composants
   width: 100%;
 }
 .carte__contenu {
-  background-color: aliceblue;
+  background-color: rgb(209, 178, 255);
+  border-radius: 40px;
+  padding: 20px;
+}
+.carte li {
+  width: fit-content;
+  list-style-type: none;
+  background-color: rgb(255, 208, 178);
+  padding: 10px;
+  margin: 10px;
 }
 /* /////////////////////////////////
 Les layouts

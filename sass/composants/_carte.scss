@@ -1,27 +1,37 @@
-
-.carte{
-    display : flex;
+.carte {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-   &--grande{
-    flex: 1 1 250px;
-   } 
-   &__image{
 
-    img{
-        width : 100%;
+    &--grande {
+        flex: 1 1 250px;
     }
-   }
-   &__contenu{
-       background-color: aliceblue; 
-   }
-   &__titre{
-    
-   }
-   &__description{}
-   &__bouton{
-    &--actif{}
-   }
 
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
 
+    &__contenu {
+        background-color: rgb(209, 178, 255);
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    & li {
+        width: fit-content;
+        list-style-type: none;
+        background-color: rgb(255, 208, 178);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    &__titre {}
+
+    &__description {}
+
+    &__bouton {
+        &--actif {}
+    }
 }
