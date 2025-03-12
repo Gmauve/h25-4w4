@@ -1,5 +1,6 @@
 <?php
-include("fonctions/customizer.php");
+$functions_dir = get_template_directory() . '/functions/';
+include_once $functions_dir . 'customizer.php';
 
 function mon_theme_supports() {
 

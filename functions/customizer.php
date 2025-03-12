@@ -18,7 +18,7 @@ function theme_4w4_customize_register($wp_customize) {
         'type' => 'text',
     ));
     
-    ///////////////////////////////////////////////
+    ////////////////////////
     // Ajout de la donnée image en background
     $wp_customize->add_setting('hero_background', array(
         'default' => '',
@@ -47,16 +47,29 @@ function theme_4w4_customize_register($wp_customize) {
         'section' => 'footer_section',
         'type' => 'text',
     ));
-    
-    ///////////////////////////////////////////////
-    // Ajout de la donnée description
-    $wp_customize->add_setting('footer_description', array(
-        'default' => __('Description', 'theme_4w4'),
+
+    ////////////////////////
+    // Ajout de la donnée telephone
+    $wp_customize->add_setting('footer_telephone', array(
+        'default' => __('Numéro de téléphone', 'theme_4w4'),
         'sanitize_callback' => 'sanitize_text_field'
     ));
     // Ajout du contrôle de la donnée
-    $wp_customize->add_control('footer_description', array(
-        'label' => __('Description', 'theme_4w4'),
+    $wp_customize->add_control('footer_telephone', array(
+        'label' => __('Numéro de téléphone', 'theme_4w4'),
+        'section' => 'footer_section',
+        'type' => 'text',
+    ));
+    
+    ////////////////////////
+    // Ajout de la donnée mission
+    $wp_customize->add_setting('footer_mission', array(
+        'default' => __('Mission', 'theme_4w4'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout du contrôle de la donnée
+    $wp_customize->add_control('footer_mission', array(
+        'label' => __('Mission', 'theme_4w4'),
         'section' => 'footer_section',
         'type' => 'text',
     ));
