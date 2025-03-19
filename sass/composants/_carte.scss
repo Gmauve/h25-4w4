@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px;
 
     &--grande {
         flex: 1 1 250px;
@@ -18,6 +17,7 @@
         background-color: rgb(209, 178, 255);
         border-radius: 40px;
         padding: 20px;
+        margin: 20px;
     }
 
     & li {
