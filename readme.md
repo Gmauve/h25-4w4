@@ -1,6 +1,6 @@
-> Situation actuelle: Blocage
+### > Situation actuelle: Ralentissement
 #### La modification du site en temps réel n'est actuellement plus possible dû à la réinitialisation de **MySQL**.
-Toutes prochaines modifications, si elles sont possibles, se feront avec vérification depuis la version du site sur le serveur externe.
+Toutes modifications prochaines se font avec vérification depuis la version du site sur WHC.
 
 # TP1
 
