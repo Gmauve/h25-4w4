@@ -1,8 +1,4 @@
     <?php get_header(); ?>
-    <?php
-    $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
-    $hero_background = get_theme_mod('hero_background', '');
-    ?>
     <?php get_template_part( 'gabarits/hero' ); ?>
     <section class="populaire">
         <div class="global">

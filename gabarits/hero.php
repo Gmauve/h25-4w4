@@ -3,6 +3,10 @@
  * Template-part héro
  */
 ?>
+<?php
+$hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+$hero_background = get_theme_mod('hero_background', '');
+?>
 <section class="hero" style="background-image: url(<?= $hero_background ?>)">
     <div class="hero__contenu global">
         <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
