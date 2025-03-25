@@ -73,6 +73,37 @@ function theme_4w4_customize_register($wp_customize) {
         'section' => 'footer_section',
         'type' => 'text',
     ));
+
+    //*******************************************//
+    //////////// Création de la section Erreur 404 ////////////
+    $wp_customize->add_section('section_404', array(
+        'title' => __('Erreur 404', 'theme_4w4'),
+        'priority' => 30,
+    ));
+    // Ajout de la donnée description 404
+    $wp_customize->add_setting('description_404', array(
+        'default' => __('Description d\'erreur 404', 'theme_4w4'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout du contrôle de la donnée
+    $wp_customize->add_control('description_404', array(
+        'label' => __('Description d\'erreur 404', 'theme_4w4'),
+        'section' => 'section_404',
+        'type' => 'text',
+    ));
+
+    ////////////////////////
+    // Ajout de la donnée image 404
+    $wp_customize->add_setting('image_404', array(
+        'default' => __('Image d\'erreur 404', 'theme_4w4'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout du contrôle de la donnée
+    $wp_customize->add_control('image_404', array(
+        'label' => __('Image d\'erreur 404', 'theme_4w4'),
+        'section' => 'section_404',
+        'type' => 'text',
+    ));
 }
     
 add_action('customize_register', 'theme_4w4_customize_register');
