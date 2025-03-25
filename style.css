@@ -126,6 +126,9 @@ Les composants
   padding: 10px;
   margin: 10px;
 }
+.err {
+  background-color: green;
+}
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
