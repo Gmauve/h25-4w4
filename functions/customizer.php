@@ -99,8 +99,20 @@ function theme_4w4_customize_register($wp_customize) {
         'sanitize_callback' => 'sanitize_text_field'
     ));
     // Ajout du contrôle de la donnée
-    $wp_customize->add_control('image_404', array(
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_404', array(
         'label' => __('Image d\'erreur 404', 'theme_4w4'),
+        'section' => 'section_404',
+    )));
+
+    ////////////////////////
+    // Ajout de la donnée titre 404
+    $wp_customize->add_setting('titre_404', array(
+        'default' => __('Message d\'erreur 404', 'theme_4w4'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout du contrôle de la donnée
+    $wp_customize->add_control('titre_404', array(
+        'label' => __('Message d\'erreur 404', 'theme_4w4'),
         'section' => 'section_404',
         'type' => 'text',
     ));
