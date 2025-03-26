@@ -129,6 +129,15 @@ Les composants
 .err {
   background-color: green;
 }
+.err__titre {
+  width: fit-content;
+  margin: 0 auto;
+}
+.err__description {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */

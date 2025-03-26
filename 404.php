@@ -8,6 +8,7 @@
         <h1 class="err__titre"><?= $titre_404 ?></h1>
         <img src="<?= $image_404 ?>" alt="" class="err_img">
         <p class="err__description"><?= $description_404 ?></p>
+        <?php get_template_part( 'gabarits/social' ); ?>
     </section>
     <?php get_footer(); ?>
 </body>
