@@ -129,10 +129,12 @@ Les composants
 .err__titre {
   width: fit-content;
   margin: 0 auto;
+  background-color: rgba(245, 245, 245, 0.25);
 }
 .err__description {
   width: fit-content;
   margin: 0 auto;
+  background-color: rgba(245, 245, 245, 0.25);
 }
 
 /* /////////////////////////////////

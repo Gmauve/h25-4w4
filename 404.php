@@ -8,7 +8,11 @@
     <section class="err" style="background-image: url(<?= $image_404 ?>); color: <?= $couleur_404 ?>">
         <h1 class="err__titre"><?= $titre_404 ?></h1>
         <p class="err__description"><?= $description_404 ?></p>
-        <?php get_template_part( 'gabarits/social' ); ?>
+        <?php wp_nav_menu(array(
+            "menu" => "erreur404",
+            "container" => "nav",
+        ));
+        ?>
     </section>
     <?php get_footer(); ?>
 </body>
