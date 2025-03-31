@@ -116,6 +116,18 @@ function theme_4w4_customize_register($wp_customize) {
         'section' => 'section_404',
         'type' => 'text',
     ));
+
+    ////////////////////////
+    // Ajout de la donnée couleur 404
+    $wp_customize->add_setting('couleur_404', array(
+        'default' => __('Couleur de texte 404', 'theme_4w4'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout du contrôle de la donnée
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'couleur_404', array(
+        'label' => __('Couleur de texte 404', 'theme_4w4'),
+        'section' => 'section_404',
+    )));
 }
     
 add_action('customize_register', 'theme_4w4_customize_register');
