@@ -164,6 +164,15 @@ Les composants
   background-color: whitesmoke;
   border-radius: 10px;
 }
+@media screen and (max-width: 800px) {
+  .err {
+    height: 70vh;
+    padding-top: 45vh;
+  }
+  .err__description {
+    margin: calc(20px + 5vh) 12vw;
+  }
+}
 
 #menu-erreur404 {
   display: flex;
