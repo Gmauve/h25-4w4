@@ -167,7 +167,7 @@ Les composants
 @media screen and (max-width: 800px) {
   .err {
     height: 70vh;
-    padding-top: 45vh;
+    padding-top: 5vh;
   }
   .err__description {
     margin: calc(20px + 5vh) 12vw;
