@@ -10,6 +10,7 @@ $footer_mission = get_theme_mod('footer_mission', 'Default Title');
                 <?php wp_nav_menu(array(
                     "menu" => "externe",
                     "container" => "nav",
+                    "container_class" => "footer__menu",
                 ));
                 ?>
             </div>
