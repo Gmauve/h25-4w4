@@ -1,0 +1,15 @@
+/**
+bouton-categorie.scss ------------------------------ .categorie__ul
+*/
+.categorie__ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+
+    &__li {
+        padding: 6px;
+        border: 2px solid #aaa;
+        border-radius: 6px;
+        background-color: rgb(77, 247, 125);
+    }
+}

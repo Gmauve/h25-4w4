@@ -5,7 +5,9 @@
 ?>
 <?php
 $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
-$hero_background = get_theme_mod('hero_background', '');
+for ($k=0; $k<3; $k++) {
+    $hero_background[$k] = get_theme_mod('hero_background_' . $k, '');
+}
 ?>
 <section class="hero" style="background-image: url(<?= $hero_background ?>)">
     <div class="hero__contenu global">

@@ -11,6 +11,13 @@
             <?php endwhile; endif; ?>
         </div>
     </section>
+    <!-- ////////////////////////////////////////////////  section rest-api -->
+    <section class="destination">
+        <?php categories_liste("destination") ?>
+        <h2 class="destination__titre">Articles de la catégorie</h2>
+        <div class="destination__list"></div>
+    </section>
+
     <footer></footer>
     <?php get_footer(); ?>
 </body>

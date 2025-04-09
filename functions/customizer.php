@@ -20,15 +20,18 @@ function theme_4w4_customize_register($wp_customize) {
     
     ////////////////////////
     // Ajout de la donnée image en background
-    $wp_customize->add_setting('hero_background', array(
-        'default' => '',
-        'sanitize_callback' => 'esc_url_raw',
-    ));
-    // Ajout du contrôle de la donnée
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
-        'label' => __('Image en arrière plan', 'theme_4w4'),
-        'section' => 'hero_section',
-    )));
+
+    for ($k = 0; $k<3; $k++) {
+        $wp_customize->add_setting('hero_background_' . $k, array(
+            'default' => '',
+            'sanitize_callback' => 'esc_url_raw',
+        ));
+        // Ajout du contrôle de la donnée
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
+            'label' => __('Image en arrière plan ' . ($k+1), 'theme_4w4'),
+            'section' => 'hero_section',
+        )));
+    }
     
     //*******************************************//
     //////////// Création de la section Footer ////////////
@@ -95,8 +98,8 @@ function theme_4w4_customize_register($wp_customize) {
     ////////////////////////
     // Ajout de la donnée image 404
     $wp_customize->add_setting('image_404', array(
-        'default' => __('Image d\'erreur 404', 'theme_4w4'),
-        'sanitize_callback' => 'sanitize_text_field'
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
     ));
     // Ajout du contrôle de la donnée
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_404', array(
