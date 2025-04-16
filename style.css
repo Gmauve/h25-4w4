@@ -128,6 +128,15 @@ Les composants
   padding: 10px;
   margin: 10px;
 }
+.carte__bouton {
+  padding: 3px;
+  border-radius: 6px;
+  background-color: red;
+}
+.carte__bouton--actif {
+  background-color: orchid;
+}
+
 .err {
   display: flex;
   flex-flow: column nowrap;
@@ -249,9 +258,7 @@ Les layouts
 }
 
 .hero {
-  background-image: url("images/maldives.jpg");
   position: relative;
-  background-repeat: no-repeat;
   min-height: 100vh;
 }
 .hero__carrousel {
@@ -260,6 +267,10 @@ Les layouts
   width: 100%;
   background-position: center;
   z-index: -1;
+  opacity: 0.5;
+}
+.hero__carrousel .active {
+  opacity: 1;
 }
 .hero__radio {
   width: 100vw;

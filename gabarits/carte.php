@@ -5,7 +5,7 @@
 ?>
 <article class="carte carte--grande">
   <figure class="carte__image">
-    <img src="voyage.jpg" alt="Image de voyage">
+    <!-- <img src="voyage.jpg" alt="Image de voyage"> -->
   </figure>
   <div class="carte__contenu">
     <?php

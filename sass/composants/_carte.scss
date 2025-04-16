@@ -33,6 +33,11 @@
     &__description {}
 
     &__bouton {
-        &--actif {}
+        padding: 3px;
+        border-radius: 6px;
+        background-color: red;
+        &--actif {
+            background-color: orchid;
+        }
     }
 }
