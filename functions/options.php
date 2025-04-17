@@ -7,7 +7,6 @@ function mon_theme_supports() {
 add_theme_support('title-tag');
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
-add_image_size('logo', 75, 75, true);
 add_theme_support('custom-logo', array(
   'height'      => 250,
   'width'       => 250,
@@ -32,18 +31,20 @@ filemtime(get_template_directory() .
 true
 );
 wp_enqueue_script(
-    'carrousel',
-    get_template_directory_uri() . '/js/carrousel.js',
-    array(),
-    filemtime(get_template_directory() . 
-    '/js/carrousel.js'),
-    true
-    );
-
+  'carrousel',
+  get_template_directory_uri() . '/js/carrousel.js',
+  array(),
+  filemtime(get_template_directory() . 
+  '/js/carrousel.js'),
+  true
+  );
 } 
 /* 
 */
 add_action('wp_enqueue_scripts', 'theme_4w4_enqueue_styles');
+
+
+
 
 
 
@@ -55,6 +56,7 @@ add_action('wp_enqueue_scripts', 'theme_4w4_enqueue_styles');
 * @param WP_query  $query la requête principal de WP
 */
 
+
 function modifie_requete_principal( $query ) {
   if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
     $query->set( 'category_name', 'populaire' );
@@ -63,4 +65,6 @@ function modifie_requete_principal( $query ) {
     }
    }
    add_action( 'pre_get_posts', 'modifie_requete_principal' );
+
+
 ?>
