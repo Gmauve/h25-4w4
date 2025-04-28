@@ -1,6 +1,3 @@
-> Status: Arrêt complet
-LocalHost ne fonctionne plus à cause d'Apache et le serveur externe ne répond plus
-
 # TP1
 
 ## Conception d'un site Wordpress pour le club de voyage fictionnel "Volca"
