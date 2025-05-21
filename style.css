@@ -327,6 +327,11 @@ footer {
   color: #000;
 }
 
+footer svg {
+  position: relative;
+  bottom: -40px;
+}
+
 .piedpage {
   display: flex;
   flex-direction: column;
