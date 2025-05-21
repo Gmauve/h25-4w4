@@ -11,6 +11,10 @@
         z-index: -1;
         opacity: 0;
         transition: opacity 1s;
+
+        &--active {
+            opacity: 1;
+        }
     }
 
     &__radio {
@@ -27,8 +31,4 @@
     &__contenu {
         z-index: 9;
     }
-}
-
-.active {
-    opacity: 1;
 }

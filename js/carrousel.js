@@ -14,8 +14,8 @@
         console.log(numero);
         let backgrounds = document.querySelectorAll('.hero__carrousel');
         for (unBackground of backgrounds) {
-            unBackground.classList.remove('active');
+            unBackground.classList.remove('hero__carrousel--active');
         }
-        backgrounds[numero].classList.add('active');
+        backgrounds[numero].classList.add('hero__carrousel--active');
     }
 })()

@@ -10,7 +10,7 @@ for ($k=0; $k<3; $k++) {
 }
 ?>
 <section class="hero">
-    <div class="hero__carrousel active" style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
+    <div class="hero__carrousel hero__carrousel--active" style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
     <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[1] ?>)"></div>
     <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[2] ?>)"></div>
     <div class="hero__radio">

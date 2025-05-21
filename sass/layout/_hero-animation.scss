@@ -1,18 +1,32 @@
 .hero__titre, .hero__description {
     position: relative;
-    animation: contenu linear 1s forwards;
+    animation: cubic-bezier(.04,1.09,.88,1.11) 2s forwards;
 }
 
 .hero__titre {
+    animation-name: contenuT;
     transform: translateY(-1000px);
 }
 
 .hero__description {
+    animation-name: contenuD;
     transform: translateX(-1000px);
     animation-delay: 1s;
 }
 
-@keyframes contenu {
+@keyframes contenuT {
+    50% {
+        transform: translate(100px, -200px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes contenuD {
+    50% {
+        transform: translate(-50px, -150px);
+    }
     100% {
         transform: translate(0, 0);
     }
