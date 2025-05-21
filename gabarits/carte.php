@@ -18,7 +18,7 @@
     <a class="carte__bouton carte__bouton--actif" href="<?php the_permalink() ?>">suite ...</a>
     <?php  
       $post_categories = get_the_category();
-      $cat_a_retirer = array(15); // Categories a exclure
+      $cat_a_retirer = array(get_cat_ID("Populaire")); // Categories a exclure
 
       foreach ($post_categories as $category) {
         $filtered_categories = array_filter($post_categories, function($post_categories) use ($cat_a_retirer) {
