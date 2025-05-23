@@ -54,7 +54,6 @@ wp_enqueue_script(
     true
 );
 }
-
 //
 add_action('wp_enqueue_scripts', 'theme_4w4_enqueue_styles');
 
@@ -76,4 +75,16 @@ function modifie_requete_principal( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'modifie_requete_principal' );
+
+// page pays
+function custom_category_template($template) {
+    if (is_category('pays')) { // Slug de la catégorie
+        $new_template = locate_template(array('template-pays.php'));
+        if (!empty($new_template)) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+add_filter('category_template', 'custom_category_template');
 ?>
