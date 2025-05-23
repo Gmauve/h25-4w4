@@ -32,6 +32,21 @@ function theme_4w4_customize_register($wp_customize) {
             'section' => 'hero_section',
         )));
     }
+
+    ////////////////////////
+    // Ajout de la donnée icone sociale
+
+    for ($k = 0; $k<4; $k++) {
+        $wp_customize->add_setting('icone_sociale_' . $k, array(
+            'default' => '',
+            'sanitize_callback' => 'esc_url_raw',
+        ));
+        // Ajout du contrôle de la donnée
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icone_sociale_' . $k, array(
+            'label' => __('Icone de réseaux social ' . ($k+1), 'theme_4w4'),
+            'section' => 'hero_section',
+        )));
+    }
     
     //*******************************************//
     //////////// Création de la section Footer ////////////
