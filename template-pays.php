@@ -15,15 +15,15 @@
         
         <!-- ////////////////////////////////////////////////  section rest-api -->
         <section class="destination">
-            <?php search_theme_directories("destination") ?>
             <h2 class="destination__titre">Articles de search</h2>
             <div class="destination__list"></div>
+            <?php categories_liste("destination") ?>
         </section>
 
-        <p>Date: <?php the_field('date') ?>&#176;C</p>
-        <p>Heure: <?php the_field('heure') ?>&#176;C</p>
-        <p>Conférencier: <?php the_field('conferencier') ?>&#176;C</p>
-        <p>Coordonnées: <?php the_field('coordonnees') ?>&#176;C</p>
+        <p>Date: <?php the_field('date')?></p>
+        <p>Heure: <?php the_field('heure')?></p>
+        <p>Conférencier: <?php the_field('conferencier')?></p>
+        <p>Coordonnées: <?php the_field('coordonnees')?></p>
 
     </section>
     <?php get_footer(); ?>
