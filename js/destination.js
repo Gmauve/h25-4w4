@@ -4,9 +4,9 @@
 (function () {
     const destinationList = document.querySelector('.destination__list');
     let method;
-    if () {
+    if (!window.location.pathname.includes('pays')) {
         method = 'categories';
-    } else if () {
+    } else if (window.location.pathname.includes('pays')) {
         method = 'search';
     }
 

@@ -29,8 +29,9 @@ $footer_mission = get_theme_mod('footer_mission', 'Default Title');
                 <?= $footer_mission ?>
             </div>
         </section>
-        <section class="piedpage__s2"></section>
-        <section class="piedpage__s3"></section>
+        <section class="github">
+            <p>Voici le lien vers le dépôt Git Hub de ce site: https://github.com/Gmauve/h25-4w4/tree/tp2</p>
+        </section>
     </div>
     
     <!-- SVG wave -->
