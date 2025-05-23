@@ -20,10 +20,10 @@
             <div class="destination__list"></div>
         </section>
 
-        <p>Température maximum: <?php the_field('date') ?>&#176;C</p>
-        <p>Température moyenne: <?php the_field('heure') ?>&#176;C</p>
-        <p>Température minimum: <?php the_field('conferencier') ?>&#176;C</p>
-        <p>Température minimum: <?php the_field('coordonnees') ?>&#176;C</p>
+        <p>Date: <?php the_field('date') ?>&#176;C</p>
+        <p>Heure: <?php the_field('heure') ?>&#176;C</p>
+        <p>Conférencier: <?php the_field('conferencier') ?>&#176;C</p>
+        <p>Coordonnées: <?php the_field('coordonnees') ?>&#176;C</p>
 
     </section>
     <?php get_footer(); ?>
