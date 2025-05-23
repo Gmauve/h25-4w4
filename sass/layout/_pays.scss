@@ -1,0 +1,15 @@
+.pays {
+    background-color: rgb(247, 254, 229);
+    &__titre {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    &__description {
+        font-size: medium;
+    }
+
+    & destination__list:hover {
+        background-color: aquamarine;
+    }
+}
