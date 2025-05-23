@@ -2,9 +2,18 @@
  *  Script js permettant d'extraite des destinations de voyage
  */
 (function () {
+    const destinationList = document.querySelector('.destination__list');
+    let method;
+    if () {
+        method = 'categories';
+    } else if () {
+        method = 'search';
+    }
+
     console.log("destination.js")
     let categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
-    const domaine = window.location.href
+    const domaine = window.location.href;
+    //// querySelector('base').getAttribute('href') ////
     parcourir_bouton()
  
     function parcourir_bouton() {
@@ -21,12 +30,11 @@
     }
 
     function va_fetch(categoryId) {
-        const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
+        const apiUrl = `${domaine}wp-json/wp/v2/posts?${method}=${categoryId}`;
         console.log(apiUrl)
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                const destinationList = document.querySelector('.destination__list');
                 data.forEach(article => {
                     const articleElement = document.createElement('div');
                     console.log(article.title.rendered)
