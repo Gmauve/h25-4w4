@@ -18,7 +18,6 @@
         <div class="destination__list"></div>
     </section>
 
-    <footer></footer>
     <?php get_footer(); ?>
 </body>
 </html>
