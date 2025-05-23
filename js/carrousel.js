@@ -8,10 +8,27 @@
         hero__radio__input_bouton.addEventListener('click', updateCarrousel);
     }
 
+    let i = 1;
+    let numero;
+
+    setInterval(() => {
+        if(i<3){
+            i++;
+        }else{
+            i=1;
+        }
+        numero = i-1;
+        parcourirCarrousel();
+    }, 5000);
+
     function updateCarrousel(event) {
         console.log(event.target);
-        let numero = event.target.getAttribute('data-id_radio');
+        numero = event.target.getAttribute('data-id_radio');
         console.log(numero);
+        parcourirCarrousel();
+    }
+
+    function parcourirCarrousel() {
         let backgrounds = document.querySelectorAll('.hero__carrousel');
         for (unBackground of backgrounds) {
             unBackground.classList.remove('hero__carrousel--active');
