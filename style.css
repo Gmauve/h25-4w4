@@ -322,18 +322,29 @@ Les layouts
 }
 .pays {
   background-color: rgb(247, 254, 229);
+  padding: 50px 250px;
 }
 .pays__titre {
-  font-size: larger;
+  font-size: 3rem;
   font-weight: bold;
 }
 .pays__description {
-  font-size: medium;
+  font-size: 1rem;
 }
-.pays destination__list:hover {
+.pays .destination__list:hover {
   background-color: aquamarine;
 }
+.pays svg {
+  width: 120vw;
+  transform: translate(-250px);
+  animation: wave-anim 3s ease-in-out infinite alternate;
+}
 
+@keyframes wave-anim {
+  100% {
+    transform: translateX(-500px);
+  }
+}
 /*
   --------------------------------- Layout du pied de page
 */

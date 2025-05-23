@@ -5,7 +5,7 @@
 
         <div class="global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); 
-            if (in_category("galerie"))  {
+            if (in_category("galerie") && in_category("pays"))  {
                 the_content() ;
             }?>
             <?php endwhile; endif; ?>
